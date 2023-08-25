@@ -1,14 +1,22 @@
 import React, { useState } from "react";
 
 import {StyleSheet,Text,View,TextInput,TouchableOpacity} from "react-native";
+import Toast from 'react-native-toast-message';
 
 export default function App() {
 
   const [Username, setUsername] = useState("");
 
   const [password, setPassword] = useState("");
+  const showToast = () => {
+    Toast.show({
+      type: 'success',
+      text1: 'Hello',
+      text2: 'This is some something 👋'
+    });
 
   return (
+    
 
     <View style={styles.container}>
     
